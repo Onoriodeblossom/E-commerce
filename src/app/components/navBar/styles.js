@@ -40,7 +40,7 @@ export const FlexibleDivAccount = styled(FlexibleDiv)`
   &:focus {
     & > * {
       color: orange;
-       // Change the color of all direct children on hover
+      // Change the color of all direct children on hover
     }
   }
 `;

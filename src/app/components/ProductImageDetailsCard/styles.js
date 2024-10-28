@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import Image from "next/image";
 
 export const ProductImageDetailsCardContainer = styled.div`
-  height: 400px;
+  height: 250px;
   width: 19%;
   background-color: white;
   border-radius: 10px;
@@ -15,8 +15,7 @@ export const ImageDiv = styled(Image)`
   width: 100%;
 `;
 export const ProductName = styled.p`
-
-color:#000;
+  color: #000;
 `;
 export const ProductPrice = styled.p`
   color: #000;

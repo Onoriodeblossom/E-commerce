@@ -11,6 +11,7 @@ export const ProductCardContainerWrapper = styled(Container)`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  
   box-shadow: rgba(99, 99, 99, 0.2) 2px 3px 8px 3px;
 `;
 
