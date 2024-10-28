@@ -32,11 +32,10 @@ export const DropDownContainer = styled.div`
 
 export const FlexibleContainer = styled(FlexibleDiv)`
   width: 95%;
-  background-color: green;
   justify-content: flex-start;
   /* display: flex; */
 
-  @media (max-width: 1010px) {
+  /* @media (max-width: 1010px) {
     flex-direction: column;
     align-items: flex-start;
     display: none;
@@ -44,7 +43,7 @@ export const FlexibleContainer = styled(FlexibleDiv)`
     ${MenuContainer}:hover & {
       display: block;
     }
-  }
+  } */
 `;
 
 export const Logo = styled(Image)`
@@ -59,21 +58,22 @@ export const LogoContainer = styled.div`
 export const ButtonContainer = styled.div`
   width: 15%;
   height: 40px;
+
 `;
 
 export const SearchContainer = styled(FlexibleDiv)`
   display: flex;
   width: 54%;
+
   justify-content: space-between;
 `;
 export const FlexibleDivAccount = styled(FlexibleDiv)`
   color: #000;
-
+  &:hover,
   &:focus {
     & > * {
       color: orange;
-
-      // Change the color of all direct children on hover
+// Change the color of all direct children on hover
     }
   }
 `;
@@ -81,4 +81,6 @@ export const FlexibleDivAccount = styled(FlexibleDiv)`
 export const Text = styled.p`
   font-size: 18px;
   color: #000;
+
+
 `;
