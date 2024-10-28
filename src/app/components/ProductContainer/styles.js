@@ -11,7 +11,7 @@ export const ProductCardContainerWrapper = styled(Container)`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  
+
   box-shadow: rgba(99, 99, 99, 0.2) 2px 3px 8px 3px;
 `;
 
@@ -29,4 +29,7 @@ export const ProductCardWrapper = styled(FlexibleDiv)`
   width: 100%;
 
   box-shadow: rgba(99, 99, 99, 0.2) 2px 3px 8px 3px;
+
+  @media (max-width: 1010px) {
+  }
 `;

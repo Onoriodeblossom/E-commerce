@@ -7,12 +7,44 @@ export const NavContainer = styled(Container)`
   width: 100%;
   background-color: #fff;
 `;
+export const MenuContainer = styled.div`
+  background: blue;
+  display: none;
+
+  position: relative;
+
+  @media (max-width: 1010px) {
+    display: block;
+  }
+`;
+
+export const DropDownContainer = styled.div`
+  background: blue;
+  display: none;
+
+  position: absolute;
+
+  @media (max-width: 1010px) {
+    display: block;
+    position: fixed;
+  }
+`;
 
 export const FlexibleContainer = styled(FlexibleDiv)`
-  width: 88%;
-
+  width: 95%;
+  background-color: green;
   justify-content: flex-start;
   /* display: flex; */
+
+  @media (max-width: 1010px) {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+
+    ${MenuContainer}:hover & {
+      display: block;
+    }
+  }
 `;
 
 export const Logo = styled(Image)`
@@ -40,6 +72,7 @@ export const FlexibleDivAccount = styled(FlexibleDiv)`
   &:focus {
     & > * {
       color: orange;
+
       // Change the color of all direct children on hover
     }
   }

@@ -8,8 +8,8 @@ import Image from "next/image";
 export const BannerContainer = styled.div`
   background-image: url(${(props) => props.backgroundImage});
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
+  background-size: contain;
+  height: 350px;
   width: 100%;
   border-radius: 10px;
   overflow: hidden;

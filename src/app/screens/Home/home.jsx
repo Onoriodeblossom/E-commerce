@@ -10,6 +10,7 @@ import { ProductCardContainer } from "@/app/components/ProductContainer/productC
 import { Footer } from "@/app/components/Footer/footer.component";
 import { NavBar } from "@/app/components/navBar/navBar";
 
+
 export const LandingPage = () => {
   return (
     <HomeContainer alignItems="flex-start" background="#ffffff">
