@@ -8,6 +8,19 @@ export const ProductImageDetailsCardContainer = styled.div`
   border-radius: 10px;
   margin-top: 10px;
   padding: 5px;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (max-width: 1030px) {
+    width: 30%;
+  }
+
+  @media (max-width: 800px) {
+    width: 47%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const ImageDiv = styled(Image)`

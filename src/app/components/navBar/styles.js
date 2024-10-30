@@ -13,7 +13,7 @@ export const MenuContainer = styled.div`
 
   position: relative;
 
-  @media (max-width: 1010px) {
+  @media (max-width: 1030px) {
     display: block;
   }
 `;
@@ -24,26 +24,22 @@ export const DropDownContainer = styled.div`
 
   position: absolute;
 
-  @media (max-width: 1010px) {
+  @media (max-width: 1030px) {
     display: block;
     position: fixed;
   }
 `;
 
-export const FlexibleContainer = styled(FlexibleDiv)`
+export const FlexibleContainer = styled.div`
   width: 95%;
   justify-content: flex-start;
-  /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  /* @media (max-width: 1010px) {
-    flex-direction: column;
-    align-items: flex-start;
+  @media (max-width: 1030px) {
     display: none;
-
-    ${MenuContainer}:hover & {
-      display: block;
-    }
-  } */
+  }
 `;
 
 export const Logo = styled(Image)`
@@ -58,7 +54,6 @@ export const LogoContainer = styled.div`
 export const ButtonContainer = styled.div`
   width: 15%;
   height: 40px;
-
 `;
 
 export const SearchContainer = styled(FlexibleDiv)`
@@ -67,20 +62,40 @@ export const SearchContainer = styled(FlexibleDiv)`
 
   justify-content: space-between;
 `;
-export const FlexibleDivAccount = styled(FlexibleDiv)`
+
+
+export const FlexibleDivAccountDropDown = styled.div`
+  width: ${({ width }) => (width ? width : "10%")};
+`;
+export const FlexibleDivAccount = styled.div`
   color: #000;
+  display: flex;
+  width: ${({ width }) => (width ? width : "10%")};
+
+  justify-content: space-between;
+align-items: center;
   &:hover,
   &:focus {
     & > * {
       color: orange;
-// Change the color of all direct children on hover
+      // Change the color of all direct children on hover
     }
   }
+`;
+
+export const DropDownContainerAccount = styled.div`
+  background: black;
+  /* display: ${({ isDropdownOpen }) => (isDropdownOpen ? "block" : "none")}; */
+
+  position: absolute;
+
+  /* @media (max-width: 1030px) {
+    display: block;
+    position: fixed;
+  } */
 `;
 
 export const Text = styled.p`
   font-size: 18px;
   color: #000;
-
-
 `;

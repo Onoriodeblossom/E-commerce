@@ -12,6 +12,8 @@ import {
   MenuContainer,
   FlexibleDivAccount,
   DropDownContainer,
+  DropDownContainerAccount,
+  FlexibleDivAccountDropDown,
 } from "./styles";
 import { CiSearch } from "react-icons/ci";
 import { LuShoppingCart } from "react-icons/lu";
@@ -53,13 +55,23 @@ export const NavBar = () => {
             <Button>Search</Button>
           </ButtonContainer>
         </SearchContainer>
-        <FlexibleDivAccount width="13%" background="" marginLeft="24px">
-          <BsPerson size={24} />
-          <Text>Account</Text>
+        <FlexibleDivAccountDropDown width="10%" background="">
+          <FlexibleDivAccount width="70%" onClick={toggleDropdown}>
+            <BsPerson onClick={toggleDropdown} size={24} />
+            <Text onClick={toggleDropdown}>Account</Text>
 
-          <FaChevronDown size={15} />
-        </FlexibleDivAccount>
-        <FlexibleDivAccount width="7%" background="" marginLeft="24px">
+            <FaChevronDown size={15} onClick={toggleDropdown} />
+          </FlexibleDivAccount>
+
+          {isDropdownOpen && (
+            <DropDownContainerAccount>
+              <p>yes</p>
+              <p>yes</p>
+              <p>yes</p>
+            </DropDownContainerAccount>
+          )}
+        </FlexibleDivAccountDropDown>
+        <FlexibleDivAccount width="4%" background="">
           <Text>Cart</Text>
 
           <IoCartOutline size={25} />
