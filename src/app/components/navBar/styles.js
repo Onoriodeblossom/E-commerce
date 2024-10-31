@@ -84,10 +84,19 @@ align-items: center;
 `;
 
 export const DropDownContainerAccount = styled.div`
-  background: black;
+  background: white;
+  position: absolute;
+  padding:10px;
+  width:200px;
+  height:250px;
+  row-gap:10px;
+  display:flex;
+  flex-direction:column;
+  margin-top:30px;
+  border-radius:5px;
+
   /* display: ${({ isDropdownOpen }) => (isDropdownOpen ? "block" : "none")}; */
 
-  position: absolute;
 
   /* @media (max-width: 1030px) {
     display: block;

@@ -56,18 +56,16 @@ export const NavBar = () => {
           </ButtonContainer>
         </SearchContainer>
         <FlexibleDivAccountDropDown width="10%" background="">
-          <FlexibleDivAccount width="70%" onClick={toggleDropdown}>
-            <BsPerson onClick={toggleDropdown} size={24} />
+          <FlexibleDivAccount width="100%" onClick={toggleDropdown}>
+            <BsPerson size={24} />
             <Text onClick={toggleDropdown}>Account</Text>
 
-            <FaChevronDown size={15} onClick={toggleDropdown} />
+            <FaChevronDown size={15} />
           </FlexibleDivAccount>
 
           {isDropdownOpen && (
             <DropDownContainerAccount>
-              <p>yes</p>
-              <p>yes</p>
-              <p>yes</p>
+              <Button>SIGN IN </Button><Button>SIGN UP </Button>
             </DropDownContainerAccount>
           )}
         </FlexibleDivAccountDropDown>
